@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { GiSecretBook } from 'react-icons/gi'
 import { BiSearch } from 'react-icons/bi'
+import { HiHome } from 'react-icons/hi'
 import { IoMdCart, IoIosListBox } from 'react-icons/io'
 
 const Navbar = () => {
@@ -15,10 +17,15 @@ const Navbar = () => {
                     <button className='px-3 h-full sm:bg-slate-800 bg-sky-800 md:bg-yellow-500 lg:bg-purple-700 xl:bg-gray-800  text-white'><BiSearch fontSize={24} /></button>
                 </div>
                 <div className=" flex gap-5 lg:gap-10 items-center max-sm:hidden">
-                    
-                    <span title='Orders' className='cursor-pointer hover:opacity-75 duration-300 text-gray-800' ><IoIosListBox fontSize={25}/></span>
-                    <span title='Cart' className='cursor-pointer hover:opacity-75 duration-300 text-gray-800' ><IoMdCart fontSize={25}/></span>
-                    <span title='Profile' className='w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center text-white text-2xl'>V</span>
+<Link to={"/"}>
+                    <span title='Home' className='cursor-pointer hover:opacity-75 duration-300 text-gray-800' ><HiHome fontSize={25} /></span>
+</Link>
+<Link to={"/cart"}>
+                    <span title='Cart' className='cursor-pointer hover:opacity-75 duration-300 text-gray-800' ><IoMdCart fontSize={25} /></span>
+</Link>
+<Link to={"/order"}>
+                    <span title='Orders' className='cursor-pointer hover:opacity-75 duration-300 text-gray-800' ><IoIosListBox fontSize={25} /></span>
+</Link>
                 </div>
 
             </nav>

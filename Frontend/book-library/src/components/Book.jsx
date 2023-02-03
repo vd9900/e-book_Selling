@@ -19,7 +19,7 @@ const Book = () => {
 
             </div>
             <div className=''>
-                <span className=' hover:text-black'>
+                <span className=' '>
                     $9.45
                 </span>
             </div>
@@ -29,10 +29,7 @@ const Book = () => {
                     <span className=' grow border-gray-600  py-1 border-2 flex items-center justify-center'>1</span>
                     <button className=' border grow border-gray-600  py-1'>-</button>
                 </div>
-                <a href="/cart">
-
                     <button className=' p-2  rounded-md text-white text-xs border bg-gray-800'>Add to Cart</button>
-                </a>
             </div>
 
         </div>
