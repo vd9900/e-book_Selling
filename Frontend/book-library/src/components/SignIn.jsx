@@ -10,7 +10,7 @@ const SignIn = () => {
             <div className='w-full  md:w-9/12   lg:w-8/12 xl:w-6/12 xl:h-4/6 flex  max-sm:flex-col  shadow-lg ' >
                 {/* headline and title  */}
                 <div className="relative  sm:w-1/2   max-sm:h-screen  bg-gradient-to-r from-teal-500 to-blue-400 p-6 flex flex-col max-sm:items-center max-sm:justify-center gap-16 sm:gap-10">
-                {/* <h3 className='absolute top-0'>hkjh</h3> */}
+                    {/* <h3 className='absolute top-0'>hkjh</h3> */}
                     {/* logo */}
                     <h3 className=' text-5xl font-semibold text-white flex  '><GiSecretBook /> BookPoint</h3>
                     <div className="flex flex-col  font-mono    ">
@@ -32,10 +32,10 @@ const SignIn = () => {
                     <form className='sm:my-auto flex flex-col gap-5'>
                         <div className="">
                             <label
-                                className="block text-gray-700 font-medium mb-2"
+                                className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-gray-700 font-medium mb-2"
                                 for="username"
                             >
-                                Email <span className='text-red-700'>*</span>
+                                Email
                             </label>
                             <input
                                 className="w-full border border-gray-400 rounded p-2 outline-none"
@@ -46,10 +46,10 @@ const SignIn = () => {
                         </div>
                         <div className="">
                             <label
-                                className="block text-gray-700 font-medium mb-2"
+                                className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-gray-700 font-medium mb-2"
                                 for="password"
                             >
-                                Password <span className='text-red-700'>*</span>
+                                Password 
                             </label>
                             <input
                                 className="w-full border border-gray-400 rounded p-2 outline-none"
@@ -74,10 +74,10 @@ const SignIn = () => {
                     <form className='sm:my-auto flex flex-col gap-3 max-sm:gap-10'>
                         <div className="">
                             <label
-                                className="block text-gray-700 font-medium mb-2"
+                                className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-gray-700 font-medium mb-2"
                                 for="username"
                             >
-                                Full name <span className='text-red-700'>*</span>
+                                Full name 
                             </label>
                             <input
                                 className="w-full border border-gray-400 rounded p-2 outline-none"
@@ -87,10 +87,10 @@ const SignIn = () => {
                         </div>
                         <div className="">
                             <label
-                                className="block text-gray-700 font-medium mb-2"
+                                className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-gray-700 font-medium mb-2"
                                 for="username"
                             >
-                                Email <span className='text-red-700'>*</span>
+                                Email
                             </label>
                             <input
                                 className="w-full border border-gray-400 rounded p-2 outline-none"
@@ -101,10 +101,10 @@ const SignIn = () => {
                         </div>
                         <div className="">
                             <label
-                                className="block text-gray-700 text-sm font-medium mb-2"
+                                className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-gray-700 text-sm font-medium mb-2"
                                 for="newpassword"
                             >
-                                Create a strong password <span className='text-red-700'>*</span>
+                                Create a strong password 
                             </label>
                             <input
                                 className="w-full border border-gray-400 rounded p-2 outline-none"
