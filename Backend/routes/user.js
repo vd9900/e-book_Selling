@@ -1,10 +1,12 @@
 const router = require("express").Router()
+const bcrypt = require("brcypt")
 const User = require("../models/user")
 
 // register
 
 router.post("/", async (req, res) => {
     const newUser = new User(req.body)
+
     try {
         const saveUser = await newUser.save()
         res.status(200).json(saveUser)
@@ -15,6 +17,11 @@ router.post("/", async (req, res) => {
 
 
 //login
+
+
+router.post("/login", (req, res) => {
+
+})
 
 
 
